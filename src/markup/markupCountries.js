@@ -11,8 +11,7 @@ const getCountryMarkupList = countries => {
 };
 
 const getCountryMarkup = countries => {
-  const namesArray = countries[0].languages;
-  const namesLanguages = namesArray.map(x => x.name);
+  const namesLanguages = countries[0].languages.map(x => x.name);
   const {
     name,
     flags: { svg: svgFlag },
